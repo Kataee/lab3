@@ -1,8 +1,13 @@
-package lab3_1;
+package lab3_2;
+
+import lab3_1.BankAccount;
 
 public class Customer {
     private String firstName, lastName;
     private BankAccount account;
+    public static final int MAX_ACCOUNTS = 10;
+    private int numAccounts;
+    private BankAccount accounts[] = new BankAccount [MAX_ACCOUNTS];
 
     public Customer(String firstName, String lastName) {
         this.firstName = firstName;

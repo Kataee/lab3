@@ -8,9 +8,6 @@ public class BankAccount {
 
     }
 
-    public BankAccount(){
-
-    }
 
     public String getAccountNumber() {
         return accountNumber;
