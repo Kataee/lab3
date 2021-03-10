@@ -20,5 +20,12 @@ public class Main {
         Customer customer3 = new Customer ("Kis", "Margit");
         customer3.setAccount(new BankAccount("OTP0003"));
         System.out.println(customer3.toString());
+        Customer customer4 = new Customer ("Nagy", "Alma");
+        customer4.setAccount(customer3.getAccount());
+
+        customer3.getAccount().deposit(500);
+        System.out.println(customer3.toString());
+        System.out.println(customer4.toString());
+
     }
 }
